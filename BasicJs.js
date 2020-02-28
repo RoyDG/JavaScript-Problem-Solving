@@ -24,7 +24,7 @@ function pen(){
 }
 pen()
 
-//Object excercise2
+//Object exercise2
 var student1 = {id:12, phone:'01759490093', name:'rahul'};
 var details = student1;
 console.log(details);
@@ -44,6 +44,7 @@ console.log(details);
 //while loop
 var number1 = 0;
 var number2 = 0;
+var number3 = 10;
 while(number1<15){
     console.log(number1);
     number1++;
@@ -52,7 +53,50 @@ while(number2<=20){
     console.log(number2);
     number2++
 }
-while (number2 < 2) {
-    console.log(number2);
-    number2++
+
+//for loop1
+for (var i=0; i<10;i++) {
+    console.log(i);
 }
+
+//for loop2
+var numbers = [4, 7, 11, 15, 20];
+for (var i=0; i<numbers.length; i++){
+    var element = numbers[i];
+    console.log(element);
+}
+
+//Arry 1
+var friendsAge = [29, 28, 27, 30];
+console.log(friendsAge);
+//find the value
+console.log(friendsAge[0]);
+//find out the value after putting the arry into another variable
+var myAge = friendsAge[1];
+console.log(myAge);
+//find out the position 
+var position = friendsAge.indexOf(27); 
+console.log(position);
+
+//arry 2
+var eggs = [30, 60, 90, 75];
+console.log(eggs);
+eggs.push(45);
+console.log(eggs);
+eggs.pop();
+console.log(eggs);
+eggs.shift();
+console.log(eggs);
+eggs.unshift(120, 45);
+console.log(eggs);
+console.log(eggs.length);  
+
+//conditions if else
+var biscuits = 50;
+if (biscuits>10){
+    console.log("you should buy that packet");
+}
+else{
+    console.log("this packet is not for you");
+}
+console.log(biscuits);
